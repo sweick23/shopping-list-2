@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <link rel="stylesheet" href="main.css">
+    <title>My shopping list app</title>
+    </head>
+<body id="bkgd">
+    <div class="space"></div>
+    <div class="listBody">
+ <div id="myDiv" class="header">
+     <header><a href="#" id="myThemes">Themes</a>
+     <div id="myModal" class="modal">
+         <div class="modal-content">
+             <div class="modal-header">
+                <span class="modal-close">&times;</span>
+                 <h3>Themes</h3>
+             </div>
+             <div class="modal-body">
+            
+             <p><button type="button"
+            onclick="getElementById('myDiv').style.background='lightgrey', getElementById('bkgd').style.background='slategrey'">Dark</button></p>
+                 <p><button type="button"
+            onclick="getElementById('myDiv').style.background='steelblue', getElementById('bkgd').style.background='#DDD'">Classic</button></p>
+                 <p><button type="button"
+            onclick="getElementById('myDiv').style.background='tan', getElementById('bkgd').style.background='teal'">Modern</button></p>
+                 
+             </div>
+             <div class="modal-footer">
+             <p>Settings</p>
+             </div>
+         </div>
+         </div>
+     </header>
+    <h2>Shopping List</h2>
+     
+     <input type="text" id="myInput" placeholder="Add Items...">
+     <button onClick="newItem()" class="addBtn">Add</button>    
+    </div>
+    <ul id="myUL">
+    <li>Milk</li>
+        <li>Eggs</li>
+        <li>Bread</li>
+        <li>pizza</li>
+        <li>lasagna</li>
+    </ul>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
